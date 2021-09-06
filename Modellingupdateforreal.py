@@ -817,7 +817,7 @@ def iterations(period, beta, InfectiousAgent, Infectedstate, HouseAgents, TotalH
         if len(InfectiousAgent) == 0 or (len(InfectiousAgent) - presymptomatic_count) < 0:
             varying_beta = beta
         else:
-            varying_beta = 0.85*beta + 0.15*beta_pre
+            varying_beta = 0.874*beta + 0.126*beta_pre
             varying_beta_asy = (0.5-(1-varying_beta/beta))
         
         NewInfectiousAgent = np.setdiff1d(InfectiousAgent, Onedaytracingdelay)
