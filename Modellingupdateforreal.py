@@ -912,7 +912,7 @@ if __name__ == '__main__':
     """
     st = time.time()
     period = 92  # Simulation period
-    simulationround = 5 # number of simulations
+    simulationround = 100 # number of simulations
     ini_seednumber = np.random.randint(low=5,high=16) # Initial infectious inidividual
     R0 = 2.5 # Basic reproduction number 
     Epsilon = 2.9 # latent period for symptomatic cases
