@@ -232,6 +232,7 @@ def HouseInfectiousProcess(beta, InfectiousAgent, Infectedstate, HouseAgents, To
         asy_outfamilysize = Infectiousfamilydata[:,8]
         asy_restfamilysize = Infectiousfamilydata[:,2] - Infectiousfamilydata[:,8]
         HouseCaseProb = 15.4/20.2 * beta * (13*(act_outfamilysize-varying_beta_asy*asy_outfamilysize) + 22*(act_restfamilysize-varying_beta_asy*asy_restfamilysize)) / (13*outfamilysize + 22*restfamilysize) * (100+index)/100
+        # source:Effects of Human Behavior Changes During the Coronavirus Disease 2019 (COVID-19) Pandemic on Influenza Spread in Hong Kong. Clinical Infectious Diseases, 73(5), e1142-e1150.
     elif weekdayind == 1:
         outfamilysize = np.zeros(len(Infectiousfamilydata[:,0]))
         restfamilysize = Infectiousfamilydata[:,9]
